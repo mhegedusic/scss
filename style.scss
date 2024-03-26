@@ -1,39 +1,33 @@
 @import "./base/colors";
-@import "./abstract/mixins";
+@import "./abstracts/mixins";
 @import "./base/reset";
 
 body{
-    @include pozadina($color4);
+    @include pozadina();
 }
 
 div:nth-of-type(1){
     @include divs();
-    @include pozadina($color1);
+    @include pozadinaDiv($color1);
     @include animation1();
-    color: $color3;
-    animation: animationDiv 12s ease-in-out forwards;
+    color: $color4;
+    animation: animationDiv 1.5s ease-in-out forwards;
 }
 
 div:nth-of-type(2){
     @include divs();
-    @include pozadina($color5);
+    @include pozadinaDiv($color2);
     @include animation1();
-    animation: animationDiv 4s ease-in-out forwards;
+    color: $color4;
+    animation: animationDiv 1.5s ease-in-out 1.5s forwards;
 }
 
 div:nth-of-type(3){
     @include divs();
-    @include pozadina($color5);
+    @include pozadinaDiv($color3);
     @include animation1();
-    animation: animationDiv 4s ease-in-out 4s forwards;
-}
-
-div:nth-of-type(4){
-    @include divs();
-    @include pozadina($color5);
-    @include animation1();
-    @include animation2($color2, $color4);
-    animation: animationDiv 4s ease-in-out forwards 8s, animaColor 4s ease-in-out 10s forwards;
+    color: $color4;
+    animation: animationDiv 1.5s ease-in-out 3s forwards;
 }
 
 section{
