@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-color: #E5EEFF;
+}
+
+div:nth-of-type(1) {
+  flex-basis: 30%;
+  margin: 10px;
+  font-size: 5em;
+  transform: translate(0, -400px);
+  background-color: #FFB4B3;
+  color: #FFCCF6;
+  animation: animationDiv 12s ease-in-out forwards;
+}
+@keyframes animationDiv {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+
+div:nth-of-type(2) {
+  flex-basis: 30%;
+  margin: 10px;
+  font-size: 5em;
+  transform: translate(0, -400px);
+  background-color: #C0C3C3;
+  animation: animationDiv 4s ease-in-out forwards;
+}
+@keyframes animationDiv {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+
+div:nth-of-type(3) {
+  flex-basis: 30%;
+  margin: 10px;
+  font-size: 5em;
+  transform: translate(0, -400px);
+  background-color: #C0C3C3;
+  animation: animationDiv 4s ease-in-out 4s forwards;
+}
+@keyframes animationDiv {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+
+div:nth-of-type(4) {
+  flex-basis: 30%;
+  margin: 10px;
+  font-size: 5em;
+  transform: translate(0, -400px);
+  background-color: #C0C3C3;
+  animation: animationDiv 4s ease-in-out forwards 8s, animaColor 4s ease-in-out 10s forwards;
+}
+@keyframes animationDiv {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+@keyframes animaColor {
+  100% {
+    background-color: #baddad;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 50px;
+}/*# sourceMappingURL=style.css.map */
