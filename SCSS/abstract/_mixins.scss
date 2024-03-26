@@ -1,0 +1,39 @@
+@mixin pozadina($color){
+    background-color: $color;
+}
+
+@mixin flexDisplay(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px;
+}
+
+@mixin divs(){
+    flex-basis: 30%;
+    margin: 10px;
+    font-size: 5em;
+    transform: translate(0, -400px);
+}
+
+@mixin animation1(){
+    @keyframes animationDiv{
+        0%{
+            transform: translate(0,-400px);
+        }
+        100%{
+            transform: translate(0, 50%);
+        }
+    }
+}
+@mixin animation2($animationColor1, $animationColor2){
+    @keyframes animaColor {
+        0%{
+            
+        }
+        100%{
+            background-color: $animationColor1;
+        }
+    }
+}
